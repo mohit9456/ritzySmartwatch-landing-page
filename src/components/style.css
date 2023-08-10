@@ -1,0 +1,49 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: url('https://png.pngtree.com/background/20210710/original/pngtree-black-dynamic-watch-simple-black-banner-picture-image_1032760.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+.cls{
+    transition: transform 0.4s ease;
+}
+
+.cls:hover{
+    transform: translateY(-9px);
+}
+
+.tme{
+    animation: mymove 0.5s ;
+}
+
+@keyframes mymove {
+    from {width: 60%}
+    to {width: 100%;}
+  }
+
+
+.tme-1{
+    animation: mymov 2s infinite;
+  }
+
+  @keyframes mymov {
+    from {width: 50%}
+    to {width: 100%;}
+  }
+
+
